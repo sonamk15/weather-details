@@ -1,0 +1,16 @@
+{
+  "name": "mysqlwithcrudinjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prd",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.19.2",
+    "mysql": "^2.17.1",
+    "sqlite3": "^4.1.0"
+  }
+}

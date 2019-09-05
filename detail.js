@@ -1,7 +1,6 @@
 const app = require("./weather_details.js");
 const knex = require("./knexfile.js");
 const express = require("express");
-const axios = require("axios");
 const app = express();
 app.use(express.json());
 
@@ -18,32 +17,3 @@ require('./weather_details.js')(weather_data,knex,axios);
 app.listen(3401,()=>{
     console.log("server is listening at the port 3401........")
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// weather_data.get('/all', (request, response, next) => {
-//   var query = knex('users').select('*').then((data) => {
-//     console.log(data);
-//     return response.json(data)
-//   })
-// });

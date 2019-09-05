@@ -11,7 +11,7 @@ app.get('/',(request,response) => {
 
 let weather_data = express.Router();
 app.use('/weather_data',weather_data);
-require('./weather_details.js')(weather_data,knex,axios);
+require('./weather_details.js')(weather_data,knex);
 
 
 app.listen(3401,()=>{

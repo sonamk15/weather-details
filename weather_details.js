@@ -9,13 +9,10 @@ module.exports = function(weather_data,knex,axios){
         knex('weather_details').where('id',id).then((data)=>{
             response.send(data)
         })
-
-    
     })
         
         
-        
-    weather_data.post('/postAllData',urlencodedParser, (request, response, next) => {
+     weather_data.post('/postAllData',urlencodedParser, (request, response, next) => {
         console.log("I am coming from the post weather endpoint......:)");
         var weather_data = {
             city_name: request.body.city_name,
@@ -72,23 +69,3 @@ module.exports = function(weather_data,knex,axios){
         });
     });
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

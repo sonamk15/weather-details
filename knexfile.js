@@ -39,13 +39,5 @@ var knex = require('knex')({
 
   
   
-  // let data = 
-  // { city_name:'Goa',
-  // city_id : 2712808,
-  // weather_id : 501,
-  // weather_status : 'Rain',
-  // description : 'moderate rain' }
-
-
-  // knex('weather_details').insert(data).then(console.log("inserted!"))
+  
 
